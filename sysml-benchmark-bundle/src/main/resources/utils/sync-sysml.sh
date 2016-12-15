@@ -4,9 +4,9 @@ SCRIPTPATH=$( cd "$(dirname "$0")" ; pwd )
 PEELROOT=$( cd $SCRIPTPATH; cd ..; pwd )
 
 # Github data
-USER=stratosphere
+USER=carabolic
 REPO=incubator-systemml
-BRANCH=flink-lr
+BRANCH=checkout-fl-instruction
 
 ARCHIVE_NAME=$BRANCH.zip
 URL="https://github.com/$USER/$REPO/archive/$ARCHIVE_NAME"
