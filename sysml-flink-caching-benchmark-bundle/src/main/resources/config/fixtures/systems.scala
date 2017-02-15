@@ -61,4 +61,13 @@ class systems extends ApplicationContextAware {
     dependencies = Set(ctx.getBean("dstat-0.7.2", classOf[Dstat])),
     mc           = ctx.getBean(classOf[Compiler])
   )
+
+  @Bean(name = Array("flink-1.2-FLINK-1730"))
+  def `flink-1.2-FLINK-1730`: Flink = new Flink(
+    version      = "1.2-FLINK-1730",
+    configKey    = "flink",
+    lifespan     = Lifespan.EXPERIMENT,
+    dependencies = Set(ctx.getBean("yarn-2.7.1", classOf[Yarn])),
+    mc           = ctx.getBean(classOf[Mustache.Compiler])
+  )
 }

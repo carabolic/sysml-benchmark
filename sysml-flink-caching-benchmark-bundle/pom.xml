@@ -4,11 +4,11 @@
 
     <parent>
         <groupId>eu.stratosphere</groupId>
-        <artifactId>sysml-benchmark</artifactId>
+        <artifactId>sysml-flink-caching-benchmark</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>sysml-benchmark-bundle</artifactId>
+    <artifactId>sysml-flink-caching-benchmark-bundle</artifactId>
     <packaging>pom</packaging>
 
     <repositories>
@@ -34,7 +34,7 @@
         <!-- bundle jars -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>sysml-benchmark-peelextensions</artifactId>
+            <artifactId>sysml-flink-caching-benchmark-peelextensions</artifactId>
         </dependency>
 
         <!-- Peel -->
