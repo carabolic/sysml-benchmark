@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>eu.stratosphere</groupId>
-    <artifactId>sysml-benchmark</artifactId>
+    <artifactId>sysml-flink-caching-benchmark</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -35,12 +35,12 @@
             <!-- bundle jars -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>sysml-benchmark-bundle</artifactId>
+                <artifactId>sysml-flink-caching-benchmark-bundle</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>sysml-benchmark-peelextensions</artifactId>
+                <artifactId>sysml-flink-caching-benchmark-peelextensions</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             
@@ -156,7 +156,7 @@
         </pluginManagement>
     </build>
   <modules>
-    <module>sysml-benchmark-bundle</module>
-    <module>sysml-benchmark-peelextensions</module>
+    <module>sysml-flink-caching-benchmark-bundle</module>
+    <module>sysml-flink-caching-benchmark-peelextensions</module>
   </modules>
 </project>
