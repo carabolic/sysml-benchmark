@@ -89,7 +89,7 @@ class experiments extends ApplicationContextAware {
          """.stripMargin.trim,
       config = no_format,
       runs   = runs,
-      runner = ctx.getBean("flink-1.0.3", classOf[Flink]),
+      runner = ctx.getBean("flink-1.2-FLINK-1730", classOf[Flink]),
       inputs = Set(ctx.getBean("linreg.dataset.features", classOf[DataSet]), ctx.getBean("linreg.dataset.features_split", classOf[DataSet])),
       outputs = Set(ctx.getBean("linreg.train.ds.output", classOf[ExperimentOutput]))
     )
@@ -153,7 +153,7 @@ class experiments extends ApplicationContextAware {
          """.stripMargin.trim,
       config = no_format,
       runs   = runs,
-      runner = ctx.getBean("flink-1.0.3", classOf[Flink]),
+      runner = ctx.getBean("flink-1.2-FLINK-1730", classOf[Flink]),
       inputs = Set(ctx.getBean("linreg.dataset.features", classOf[DataSet]), ctx.getBean("linreg.dataset.features_split", classOf[DataSet])),
       outputs = Set(ctx.getBean("linreg.train.ds.output", classOf[ExperimentOutput]))
     )
@@ -223,7 +223,7 @@ class experiments extends ApplicationContextAware {
          """.stripMargin.trim,
       config = ConfigFactory.parseString(""),
       runs   = runs,
-      runner = ctx.getBean("flink-1.0.3", classOf[Flink]),
+      runner = ctx.getBean(flink-1.2-FLINK-1730", classOf[Flink]),
       inputs = Set(ctx.getBean("linreg.dataset.features", classOf[DataSet]), ctx.getBean("linreg.dataset.features_split", classOf[DataSet])),
       outputs = Set(ctx.getBean("linreg.train.ds.output", classOf[ExperimentOutput]))
     )
@@ -287,7 +287,7 @@ class experiments extends ApplicationContextAware {
          """.stripMargin.trim,
       config = ConfigFactory.parseString(""),
       runs   = runs,
-      runner = ctx.getBean("flink-1.0.3", classOf[Flink]),
+      runner = ctx.getBean("flink-1.2-FLINK-1730", classOf[Flink]),
       inputs = Set(ctx.getBean("linreg.dataset.features", classOf[DataSet]), ctx.getBean("linreg.dataset.features_split", classOf[DataSet])),
       outputs = Set(ctx.getBean("linreg.train.ds.output", classOf[ExperimentOutput]))
     )

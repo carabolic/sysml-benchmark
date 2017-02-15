@@ -63,7 +63,7 @@ class systems extends ApplicationContextAware {
   )
 
   @Bean(name = Array("flink-1.2-FLINK-1730"))
-  def `flink-1.0.3`: Flink = new Flink(
+  def `flink-1.2-FLINK-1730`: Flink = new Flink(
     version      = "1.2-FLINK-1730",
     configKey    = "flink",
     lifespan     = Lifespan.EXPERIMENT,
